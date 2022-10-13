@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-app-firebase-task": {
+      "hosting": {
+        "angular-app-firebase": [
+          "angular-app-firebase-task"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-app-firebase-task"
+  }
+}
