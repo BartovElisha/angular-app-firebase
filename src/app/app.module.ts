@@ -8,19 +8,24 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { HttpClientModule } from '@angular/common/http';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
+import { ImagesComponent } from './components/images/images.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirebaseComponent
+    FirebaseComponent,
+    ImagesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    HttpClientModule,
     // provideFirebaseApp(() => initializeApp(environment.firebase)),
     // provideAuth(() => getAuth()),
     // provideFirestore(() => getFirestore())
